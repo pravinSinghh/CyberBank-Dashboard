@@ -1,0 +1,147 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberBank Dashboard</title>
+  <link rel="UIBANK_CSS.html" href="style.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>CyberBank</h2>
+    <ul>
+      <li><a href="dashboard.html" class="active">🏠 Home</a></li>
+      <li><a href="profile.html">👤 My Profile</a></li>
+      <li><a href="admin.html">🛠️ Admin</a></li>
+      <li><a href="support.html">💬 Support</a></li>
+      <li><a href="card.html">💳 Your Card Details</a></li>
+      <li><a href="history.html">📜 History</a></li>
+      <li><a href="balance.html">💰 Balance</a></li>
+      <li><a href="transfer.html">💸 Transfer</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <h1>Welcome to CyberBank Dashboard</h1>
+    <p>Select an option from the sidebar to view more details.</p>
+  </div>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberBank Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+      width: 240px;
+      background-color: #4fc3f7;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      height: 100%;
+      left: 0;
+      top: 0;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+
+    .sidebar h2 {
+      color: #fff;
+      margin-bottom: 30px;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      width: 100%;
+    }
+
+    .sidebar ul li {
+      width: 100%;
+    }
+
+    .sidebar ul li a {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      padding: 15px 20px;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar ul li a:hover,
+    .sidebar ul li a.active {
+      background-color: #0288d1;
+      border-left: 5px solid #ffffff;
+      padding-left: 25px;
+    }
+
+    /* Main content styling */
+    .main-content {
+      margin-left: 240px;
+      padding: 40px;
+      width: calc(100% - 240px);
+      background-color: #fff;
+    }
+
+    .main-content h1 {
+      font-size: 2rem;
+      color: #0288d1;
+      margin-bottom: 10px;
+    }
+
+    .main-content p {
+      color: #555;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>CyberBank</h2>
+    <ul>
+      <li><a href="#" class="active">🏠 Home</a></li>
+      <li><a href="#">👤 My Profile</a></li>
+      <li><a href="#">🛠️ Admin</a></li>
+      <li><a href="#">💬 Support</a></li>
+      <li><a href="#">💳 Your Card Details</a></li>
+      <li><a href="#">📜 History</a></li>
+      <li><a href="#">💰 Balance</a></li>
+      <li><a href="#">💸 Transfer</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>Welcome to CyberBank Dashboard</h1>
+    <p>Select an option from the sidebar to view more details.</p>
+  </div>
+
+</body>
+</html>
