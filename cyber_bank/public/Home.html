@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        color: #00c9a7;
+        margin-top: -40%;
+        position: absolute;
+       
+    }
+    body {
+        font-family: Poppins, sans-serif;
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 50%;
+      margin-top: -50px;
+      margin-left: -42%;
+      margin-right: auto;
+    position: absolute;
+    }
+    .grid-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .grid-item:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-5px);
+    }
+
+    .grid-item h3 {
+      color: #00c9a7;
+      margin-bottom: 10px;
+    }
+</style>
+<body>
+     <h1>Welcome to CyberBank Dashboard</h1>
+     <div class="grid-container">
+    <div class="grid-item" onclick="navigate('account.html')">
+      <h3>👤 Account</h3>
+      <p>Check your balance and details</p>
+    </div>
+
+    <div class="grid-item" onclick="navigate('transactions.html')">
+      <h3> 🧾Transactions</h3>
+      <p>View your recent transaction history</p>
+    </div>
+
+    <div class="grid-item" onclick="navigate('transfer.html')">
+      <h3>🚀 Transfer Money</h3>
+      <p>Send money securely to others</p>
+    </div>
+
+    <div class="grid-item" onclick="navigate('settings.html')">
+      <h3>⚙️ Settings</h3>
+      <p>Update your account preferences</p>
+    </div>
+  </div>
+
+</body>
+</html>
